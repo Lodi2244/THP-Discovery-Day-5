@@ -1,0 +1,103 @@
+
+body {
+	height: 95.3vh;
+	background: url("/images/chalkboard.png") center center fixed;
+	border: tan solid 12px;
+	border-top: #bda27e solid 12px;
+	border-left: #b19876 solid 12px;
+	border-bottom: #c9ad86 solid 12px;
+	box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782, 0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+	padding-left: 2em;
+	/* add a custom cursor */
+}
+
+form {
+	display: inline;
+	margin: 4px;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 3em;
+}
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+	background: url("/images/button.png") center center no-repeat;
+	font-size: x-large;
+	padding: 250px 90px;
+}
+
+div.chalkboard-container {
+	text-align: center;
+	font-family: "Eraser", sans-serif;
+	color: whitesmoke;
+	font-size: x-large;
+}
+
+div.image-container {
+	margin-bottom: 3em;
+}
+
+div.winner-image {
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+div.loser-image {
+	margin-top: 4em;
+	margin-bottom: 30px;
+}
+
+div.placeholder {
+	display: inline;
+	font-size: 160%;
+}
+
+div.board-section {
+	margin-top: 2em;
+}
+
+div.alphabet-section {
+	margin-top: 3em;
+}
+
+img.hangman-drawing {
+	width: 300px;
+	height: 400px;
+}
+
+img.loser {
+	width: 400px;
+	height: 400px;
+}
+
+button {
+	font-family: "Eraser", sans-serif;
+	font-size: xx-large;
+	color: whitesmoke;
+	background: transparent;
+	border: none;
+}
+
+.letter { 
+	position: relative; 
+}
+
+.strike {
+	margin: 0;
+  content:' ';
+  position: absolute;
+  top: 10%; 
+	left: -10%;
+  width: 140%; 
+	height: 100%;
+  opacity: 100%;
+	transform: rotate(-32deg);
+  background: repeat-x url("https://i.imgur.com/ieC3Bmm.png") center center fixed;
+}
+

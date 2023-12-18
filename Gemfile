@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+ruby '3.2.2'
+
+gem 'sinatra'
+gem 'sinatra-flash'
+gem 'puma'
+gem 'rack_session_access'
+gem 'launchy'
+gem 'rerun'
+gem 'random-word'
+gem 'httparty'

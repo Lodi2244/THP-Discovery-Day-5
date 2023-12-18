@@ -1,0 +1,7 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [9292],
+  "postAttachCommand": "gem install bundler; bundle install",
+  "features": {
+  }
+}

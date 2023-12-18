@@ -1,0 +1,18 @@
+<div class="board-section">
+  <div class="image-container">
+    <img class="hangman-drawing" src="/images/step-<%= @wrong_guesses_count %>.png"></img>
+  </div>
+  <div class="word-container">
+    <% @displayed_word.each do |letter| %>
+      <div class="placeholder" ><%= letter %></div>
+    <% end %>
+  </div>
+</div>
+<div class="alphabet-section">
+  <% Array("a".."z").each do |letter|  %>
+    <form action="/guess" method="post">
+      <input type="hidden" name="guess" value=<%= letter %>>
+      <button class="letter" type="submit"><%= letter.upcase %><span class=" "></span></button>  <%# Add the class 'strike' to the letters already used %>
+    </form>
+  <% end %>
+</div> 
